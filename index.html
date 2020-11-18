@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Сайт</title>
+        <link rel="stylesheet" type="text/css" href="css/maket.css" > 
+    </head>
+    <body>
+        <div id="wrapper">
+            <div class="wrapper-wr">
+                <div class="wrapper-menu">
+                    <div class="menu-top">
+                        <nav class="menu-top-ul">
+                            <ul class="menu-top-links">
+                                <li><a href="#">Главная</a></li>
+                                <li><a href="#">O компании</a></li>
+                                <li><a href="#">Контакты</a></li>
+                                <li><a href="#">Интернет-магазин</a></li>
+                                <li><a href="#">Информация для покупателей</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="menu-burger">
+                    <a href="#" class="menu-btn"></a>
+                    <div class="burger-line "></div>
+                    <div class="burger-line "></div>
+                    <div class="burger-line "></div>
+                </div>
+                <div class="wr-left">
+                    <div class="login-block-wr">
+                        <div class="login-link">
+                            <img src="images/profile-icon.png" alt="">
+                        </div>
+                        <div class="login-block-in">
+                            <div class= "block-user">
+                                <div class="block-title">
+                                    <span>Вход / Регистрация</span>
+                                    <a href="" class="forgot"> Забыли пароль?</a>
+                                </div>
+                                <div class="block-body">
+                                    <form class="tpl-form tpl-auth" >
+                                        <input type="hidden">
+                                        <div class="field name tpl-field haruki">
+                                            <input class="input_field field_haruki empty_field" type="text" name="login" id="login" required="">
+                                            <div class="tpl-title input_label label_haruki" >
+                                                <span class="label_content content_haruki">Логин</span>
+                                            </div>
+                                        </div>
+                                        <div class="field password tpl-field haruki">
+                                            <input class="input_field field_haruki empty_field" type="password" name="password" id="password" required="">
+                                            <div class="tpl-title input_label label_haruki" >
+                                                <span class="label_content content_haruki">Пароль</span>
+                                            </div>
+                                        </div>
+                                        <div class="field links clear-self">
+                                            <button type="submit" class="btn-variant1">Войти</button>
+                                        </div>
+                                        <a href="#" class="register white-btn btn-variant2">Зарегистрироваться</a>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="search-block-wr">
+                        <div class="search-link">
+                            <img src="images/search-icon.png" alt="" title="">
+                        </div>
+                        <div class="search-block-in">
+                            <div class="search-block">
+                                <div class="search-block-title">Поиск</div>
+                                <nav class="site-search-wr">
+                                    <form class="tpl-form tpl-auth">
+                                        <div class="tpl-field haruki">
+                                            <input id="search" type="text" class="search-text input_field field_haruki empty_field" required="" name="search">
+                                            <div class="tpl-title input_label label_haruki" >
+                                                <span class="label_content content_haruki">Поиск</span>
+                                            </div>
+                                        </div>
+                                        <input type="submit" class="search-but" value="">
+                                    </form>
+                                </nav>
+                                <div class="search-online-store opened">
+                                    <div class="ColLeft-down1">
+                                        <ul>
+                                            <li>Расширенный поиск</li>
+                                        </ul>
+                                            <span class="GLstrelka"><img src="images/GLstrelka.png" alt=""></span>
+                                    </div>
+                                    <div class="Cl-Menu-clouse-down1">
+                                        <form class="Cl-Menu-down-search" >
+                                            <div class="range_slider">
+                                                <div class="row-title">Цена</div>
+                                                <div>
+                                                    <div class="price_range">
+                                                        <input name="s[price][min]" type="tel" size="5" id="amount1" value="0">
+                                                        <input name="s[price][min]" type="tel" size="5" id="amount_11" value="40000">
+                                                    </div>
+                                                    <div id="slider-range1">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="field text">
+                                                <label class="field-title" id="s[name]">Название:</label>
+                                                <br>
+                                                <label class="input">
+                                                    <input type="text" name="s[name]" value>
+                                                </label>
+                                            </div>
+                                            <div class="field text">
+                                                <label class="field-title" id="s[article]">Артикул:</label>
+                                                <br>
+                                                <label class="input">
+                                                    <input type="text" name="s[article]" value>
+                                                </label>
+                                            </div>
+                                            <div class="field text">
+                                                <label class="field-title" id="s[search_text]">Текст:</label>
+                                                <br>
+                                                <label class="input">
+                                                    <input type="text" name="s[search_text]" value>
+                                                </label>
+                                            </div>
+                                            <div class="field select">
+                                                <span class="field-title">Выберите категорию:</span>
+                                                <div class="list-select-option">
+                                                    <select class="select-option" name="s[folder_id]">
+                                                        <option value="#">Все</option>
+                                                        <option value="#">Бандажи</option>
+                                                        <option value="#">Шейные бандажи</option>
+                                                        <option value="#">Послеоперационные бандажи</option>
+                                                        <option value="#">Дородовые и послеродовые бандажи</option>
+                                                        <option value="#">Детские</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        <div class="field select">
+                                                <span class="field-title">Новинка:</span>
+                                                <div class="list-select-option">
+                                                    <select class="select-option">
+                                                        <option value="#">Все</option>
+                                                        <option value="#">Да</option>
+                                                        <option value="#">Нет</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="field select">
+                                                <span class="field-title">Спецпредложение:</span>  
+                                                <div class="list-select-option">
+                                                    <select class="select-option">
+                                                        <option value="#">Все</option>
+                                                        <option value="#">Да</option>
+                                                        <option value="#">Нет</option>
+                                                    </select>
+                                                </div> 
+                                            </div>
+                                            <div class="field select">
+                                                <span class="field-title">Результатов на странице:</span>
+                                                <div class="list-select-option">
+                                                    <select class="select-option" >
+                                                        <option value="#">Все</option>
+                                                        <option value="#">5</option>
+                                                        <option value="#">20</option>
+                                                        <option value="#">35</option>
+                                                        <option value="#">50</option>
+                                                    </select>
+                                                </div>  
+                                            </div> 
+                                            <div class="submit">
+                                                <button class="search-btn">Найти</button>
+                                            </div>                    
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart-wr">
+                        <div class="cart-in">
+                            <div class="cart-in2">
+                                <div class="cart-btn">
+                                    <span class="cart-total">0</span>
+                                    <img src="images/cart-icon.png" alt="" title="">
+                                </div>
+                                <div class="cart-block">
+                                    <div class="cart-block-title">Корзина</div>
+                                    <div>Ваша корзина пуста</div>
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="content"> 
+            <div class="content-GL">
+                <div class="Logo">
+                    <div class="Logo-GL">
+                        <a href="#"><img src="images/logo.png" alt=""></a>
+                    </div>
+                <div class="Logo-VK">
+                     <a href="#"><img src="images/vk-button.png" alt=""></a>
+                </div>
+                </div>
+                <form class="Search" >
+                    <div class="search">
+                        <input class="input" type="search" name="q" placeholder="Искать...">
+                        <input class="submit" type="submit" value="">
+                    </div>
+                </form>
+                <div class="Logo-TX">
+                    <p class="Logo-MS">Находимся в Томске, работаем без выходных c 10:00 до 19:00</p>
+                    <p class="Logo-PR">пр. Мира, 19 пр. Ленина, 90 пр. Кирова, 57</p>
+                    <p class="Logo-NM">+7 (3822) 995‒303</p>
+                    <p class="Logo-VKtext"><a href="#">Свежие скидки и акции в нашей группе в ВК!</a></p>
+                </div>
+            </div>
+        </div>
+        <div id="THE_MAIN">
+            <div id="The_main">
+                <aside id="ColLeft">
+                        <div class="ColLeft">
+                                <nav class="CL-Menu"> 
+                                    <div>
+                                        <div class="CL-Menu-open">
+                                            <ul>
+                                                <li>Католог товаров</li>
+                                            </ul>
+                                            <span class="GLstrelka"><img src="images/GLstrelka.png" alt=""></span>
+                                        </div>
+                                        <div id="Cl-Menu-clouse" class="Cl-Menu-clouse">
+                                            <ul id="nav_list_first" class="CL-Menu-on">
+                                                <li><a href="#">Бандажи</a>
+                                                    <ul class="CL-Menu-in">
+                                                        <li><a href="#">Швейные бандажи</a></li>
+                                                        <li><a href="#">Послеоперацинонные бандажи</a></li>
+                                                        <li><a href="#">Дородовые и послеродовые бандажи</a></li>
+                                                        <li><a href="#">Детские</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="#">Ортезы на суставы</a>
+                                                    <ul class="CL-Menu-in">
+                                                        <li><a href="#">Плечо</a></li>
+                                                        <li><a href="#">Локоть</a></li>
+                                                        <li><a href="#">Запястье</a></li>
+                                                        <li><a href="#">Бедро</a></li>
+                                                        <li><a href="#">Колено</a></li>
+                                                        <li><a href="#">Голеностоп</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="#">Ортопедические стельки</a>
+                                                    <ul class="CL-Menu-in">
+                                                        <li><a href="#">Стельки</a></li>
+                                                        <li><a href="#">Полустельки</a></li>
+                                                        <li><a href="#">Детские стельки</a></li>
+                                                        <li><a href="#">Корректоры стопы</a></li>
+                                                        <li><a href="#">Корректоры стопы из силикона</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="#">Корсетные пояса и Корректоры осанки</a></li>
+                                                <li><a href="#">Компрессионный трикотаж</a>
+                                                    <ul class="CL-Menu-in">
+                                                        <li><a href="#">0 класс космпрессии</a></li>
+                                                        <li><a href="#">1 класс космпрессии</a></li>
+                                                        <li><a href="#">2 класс космпрессии</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="#">Ортопедические подушки</a>
+                                                    <ul class="CL-Menu-in">
+                                                        <li><a href="#">Детские подушки</a></li>
+                                                        <li><a href="#">Подушки для взрослых</a></li>
+                                                        <li><a href="#">Для сидения, поездок</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="#">Матрасы</a>
+                                                    <ul class="CL-Menu-in">
+                                                        <li><a href="#">Ортопедические наматрасники</a></li>
+                                                        <li><a href="#">Матрасы анатомические Экотен</a></li>
+                                                        <li><a href="#">Беспружинные матрасы Neolux</a></li>
+                                                        <li><a href="#">Пружинные матрасы Neolux</a></li>
+                                                        <li><a href="#">Противопролежные матрасы</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="#">Детская Ортопедическая обувь</a></li>
+                                                <li><a href="#">Терапевтическая обувь</a></li>
+                                                <li><a href="#">Технические средства реабилитации</a></li>
+                                                <li><a href="">Массажеры</a>
+                                                    <ul class="CL-Menu-in">
+                                                        <li><a href="#">Автоматические</a></li>
+                                                        <li><a href="#">Ручные</a></li>
+                                                        <li><a href="#">Массажные коврики</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="#">При травмах</a></li>
+                                                <li><a href="#">Лечебная косметика и изделия для красоты</a></li>
+                                                <li><a href="#">Кинезио тейпы</a></li>
+                                                <li><a href="#">Тонометры</a></li>
+                                                <li><a href="#">Увлажнители, облучатели воздуха</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </nav>
+                                <div class="ColLeft-down">
+                                    <ul>
+                                        <li>Расширенный поиск</li>
+                                    </ul>
+                                    <span class="GLstrelka"><img src="images/GLstrelka.png" alt=""></span>
+                                </div>
+                                <div class="Cl-Menu-clouse-down">
+                                    <form class="Cl-Menu-down-search" >
+                                        <div class="range_slider">
+                                            <div class="row-title">Цена</div>
+                                            <div>
+                                                <div class="price_range">
+                                                    <input name="s[price][min]" type="tel" size="5" id="amount" value="0">
+                                                    <input name="s[price][min]" type="tel" size="5" id="amount_1" value="40000">
+                                                </div>
+                                                <div id="slider-range">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="field text">
+                                            <label class="field-title" id="s[name1]">Название:</label>
+                                            <br>
+                                            <label class="input">
+                                                <input type="text" name="s[name]" value>
+                                            </label>
+                                        </div>
+                                        <div class="field text">
+                                            <label class="field-title" id="s[article1]">Артикул:</label>
+                                            <br>
+                                            <label class="input">
+                                                <input type="text" name="s[article]" value>
+                                            </label>
+                                        </div>
+                                        <div class="field text">
+                                            <label class="field-title" id="s[search_text1]">Текст:</label>
+                                            <br>
+                                            <label class="input">
+                                                <input type="text" name="s[search_text]" value>
+                                            </label>
+                                        </div>
+                                        <div class="field select">
+                                            <span class="field-title">Выберите категорию:</span>
+                                            <div class="list-select-option">
+                                                <select class="select-option" name="s[folder_id]">
+                                                    <option value="#">Все</option>
+                                                    <option value="#">Бандажи</option>
+                                                    <option value="#">Шейные бандажи</option>
+                                                    <option value="#">Послеоперационные бандажи</option>
+                                                    <option value="#">Дородовые и послеродовые бандажи</option>
+                                                    <option value="#">Детские</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    <div class="field select">
+                                            <span class="field-title">Новинка:</span>
+                                            <div class="list-select-option">
+                                                <select class="select-option">
+                                                    <option value="#">Все</option>
+                                                    <option value="#">Да</option>
+                                                    <option value="#">Нет</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="field select">
+                                            <span class="field-title">Спецпредложение:</span>  
+                                            <div class="list-select-option">
+                                                <select class="select-option">
+                                                    <option value="#">Все</option>
+                                                    <option value="#">Да</option>
+                                                    <option value="#">Нет</option>
+                                                </select>
+                                            </div> 
+                                        </div>
+                                        <div class="field select">
+                                            <span class="field-title">Результатов на странице:</span>
+                                            <div class="list-select-option">
+                                                <select class="select-option" >
+                                                    <option value="#">Все</option>
+                                                    <option value="#">5</option>
+                                                    <option value="#">20</option>
+                                                    <option value="#">35</option>
+                                                    <option value="#">50</option>
+                                                </select>
+                                            </div>  
+                                        </div> 
+                                        <div class="submit">
+                                            <button class="search-btn">Найти</button>
+                                        </div>                    
+                                    </form>
+                                </div>
+                                <nav class="CL-menu-wr">
+                                    <ul class="menu-left">
+                                        <li><a href="#">Ортопедические товары</a></li>
+                                        <li><a href="#">Плантоскопия</a></li>
+                                        <li><a href="#">Экспресс-ортезирование</a></li>
+                                        <li><a href="#">Услуги</a></li>
+                                        <li><a href="#">Часто задаваемые вопросы</a></li>
+                                    </ul>
+                                </nav>
+                        </div>
+                </aside>
+                <div class="Slider-New">
+                    <div id="slider-wrap">
+                            <div class="slider">
+                                <div class="owl-stage-outer">
+                                    <div class="owl-stage">
+                                        <div class="owl-item">
+                                            <div class="main-slider-pic"></div>
+                                            <div class="main-slider-info">
+                                                <div class="main-slider-title"></div>
+                                                <div class="main-slider-text"></div>
+                                            </div>
+                                        </div>
+                                        <div class="owl-item">
+                                            <div class="main-slider-pic"></div>
+                                            <div class="main-slider-info">
+                                                <div class="main-slider-title"></div>
+                                                <div class="main-slider-text"></div>
+                                            </div>
+                                        </div>
+                                        <div class="owl-item">
+                                            <div class="main-slider-pic"></div>
+                                            <div class="main-slider-info">
+                                                <div class="main-slider-title"></div>
+                                                <div class="main-slider-text"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="owl-nav">
+                                    <div class="owl-prev"></div>
+                                    <div class="owl-next"></div>
+                                </div>
+                                <div class="owl-bots">
+                                    <div class="owl-bot"></div>
+                                    <div class="owl-bot"></div>
+                                    <div class="owl-bot"></div>
+                                </div>
+                            </div>
+                    </div>
+                    <div id="ColRightdown">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer id="site-footer" >
+            <div id="footer">
+                <div class="footer-in">
+                    <div class="footer-left">
+                        <nav class="footer-menu">
+                            <ul class="footer-menu-in">
+                                <li><a href="#">О компании</a></li>
+                                <li><a href="#">Услуги</a></li>
+                                <li><a href="#">Прайс-лист</a></li>
+                                <li><a href="#">Контакты</a></li>
+                                <li><a href="#">Отзывы о нас</a></li>
+                                <li><a href="#">Напишите нам</a></li>
+                            </ul>
+                        </nav>
+                        <div class="footer-contacts">
+                            <div class="footer-contacts-title">Наши магазины</div>
+                            <div class="footer-menu-addres">
+                               <div class="footer-addres">пр. Мира 19 </div>     
+                               <div class="footer-addres">пр.Ленина 90 </div> 
+                               <div class="footer-addres">пр.Кирова 57 </div> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-right">
+                        <div class="footer-namber">
+                            <a href="#">+7 (3822) 995-303</a>
+                        </div>
+                        <div class="footer-vk">
+                            <a href="#"><img src="images/vk-button.png" alt=""></a>
+                            <div class="footer-text">
+                                Свежие скидки и акции
+                                <br>
+                                В нашей группе вк!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-in">
+                    <div class="site-name">
+                        <p>© 2012–2019 Ортопедический салон №1</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="js/jquery-3.4.1.min.js"></script>  
+        <script src="js/jquery-ui.js"></script>
+        <script src="js/maket.js"></script>  
+    </body>
+</html>
